@@ -9,14 +9,14 @@
 @import "~perfect-scrollbar/css/perfect-scrollbar.css";
 
 //materialize-css
-//@import "../app-assets/css/themes/vertical-menu-nav-dark-template/materialize.min.css";
-@import "~materialize-css/dist/css/materialize.css";
+@import "../app-assets/css/themes/vertical-modern-menu-template/materialize.min.css";
 
-@import "../app-assets/css/themes/vertical-menu-nav-dark-template/style.css";
+
+@import "../app-assets/css/themes/vertical-modern-menu-template/style.min.css";
 
 
 //custom
-.navbar-full .brand-sidebar {
+/*.navbar-full .brand-sidebar {
     background: linear-gradient(45deg, #0288d1, #26c6da)!important;
 }
 
@@ -25,4 +25,18 @@
     color: #fff;
     background: linear-gradient(45deg, #0288d1, #26c6da)!important;
     box-shadow: 0 6px 20px 0 rgba(38, 198, 218, .5)!important;
+}*/
+
+.btn, .btn-large, .btn-small {
+    cursor: pointer;
+    -webkit-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: .5px;
+    color: #fff;
+    background-color: #ff4081;
+}
+.btn-floating, .btn-floating:hover {
+    background-color: #ff4081;
 }
