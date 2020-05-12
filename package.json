@@ -22,5 +22,9 @@
         "sass-loader": "^8.0.0",
         "vue": "^2.5.17",
         "vue-template-compiler": "^2.6.10"
+    },
+    "dependencies": {
+        "materialize-css": "^1.0.0-rc.2",
+        "perfect-scrollbar": "1.4.0"
     }
 }

@@ -1,8 +1,28 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
-// Variables
-@import 'variables';
+/********************************
+ default template
+*********************************/
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+//perfect-scrollbar
+@import "~perfect-scrollbar/css/perfect-scrollbar.css";
+
+//materialize-css
+//@import "../app-assets/css/themes/vertical-menu-nav-dark-template/materialize.min.css";
+@import "~materialize-css/dist/css/materialize.css";
+
+@import "../app-assets/css/themes/vertical-menu-nav-dark-template/style.css";
+
+
+//custom
+.navbar-full .brand-sidebar {
+    background: linear-gradient(45deg, #0288d1, #26c6da)!important;
+}
+
+.sidenav li a.active {
+    margin: 0;
+    color: #fff;
+    background: linear-gradient(45deg, #0288d1, #26c6da)!important;
+    box-shadow: 0 6px 20px 0 rgba(38, 198, 218, .5)!important;
+}

@@ -1,17 +1,28 @@
 window._ = require('lodash');
 
+try {
+     window.$ = window.jQuery = require('jquery');
+
+} catch (e) {}
+
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
  * for JavaScript based Bootstrap features such as modals and tabs. This
  * code may be modified to fit the specific needs of your application.
  */
 
-try {
-    window.Popper = require('popper.js').default;
-    window.$ = window.jQuery = require('jquery');
 
-    require('bootstrap');
-} catch (e) {}
+/*************************
+ *  TEMPLATE ASSETS
+ *************************/
+
+require('materialize-css/dist/js/materialize');
+require('../app-assets/js/plugins.js');
+
+/*************************
+ *  END - TEMPLATE ASSETS
+ *************************/
+
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
