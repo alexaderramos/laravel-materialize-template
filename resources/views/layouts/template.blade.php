@@ -56,7 +56,7 @@
             </div>
         </div>
         <div class="col s12">
-            <div class="container">
+            <div class="container" id="app">
                 @yield('content')
 
                 <div style="bottom: 50px; right: 19px;" class="fixed-action-btn direction-top"><a class="btn-floating btn-large gradient-45deg-light-blue-cyan gradient-shadow"><i class="material-icons">add</i></a>
