@@ -40,3 +40,47 @@
 .btn-floating, .btn-floating:hover {
     background-color: #ff4081;
 }
+
+//navbar
+
+.section-auth-navbar nav .nav-wrapper {
+    font-size: 2.1rem
+}
+
+.section-auth-navbar nav .nav-wrapper .brand-logo.center,
+.section-auth-navbar nav .nav-wrapper .brand-logo.center-align {
+    position: absolute;
+    left: 45%
+}
+
+.section-auth-navbar #extended-navbar ul.sidenav#mobile-demo,
+.section-auth-navbar #extended-navbar ul.sidenav#mobile-demo2,
+.section-auth-navbar #mobile-collapse ul.sidenav#mobile-demo,
+.section-auth-navbar #mobile-collapse ul.sidenav#mobile-demo2 {
+    top: 56px;
+    width: 350px
+}
+
+@media screen and (max-width:540px) {
+    .section-auth-navbar nav .nav-wrapper .brand-logo.center,
+    .section-auth-navbar nav .nav-wrapper .brand-logo.center-align {
+        position: absolute;
+        left: 40%
+    }
+}
+
+//error auth
+div.alert-error-auth{
+    margin-left: 3rem;
+}
+
+small.error-auth {
+    font-size: .8rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    color: #ff4081;
+}

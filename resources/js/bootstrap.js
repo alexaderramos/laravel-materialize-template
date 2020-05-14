@@ -19,6 +19,7 @@ try {
 require('materialize-css/dist/js/materialize');
 require('../app-assets/js/plugins.js');
 
+require('../js/custom/auth.js');
 /*************************
  *  END - TEMPLATE ASSETS
  *************************/

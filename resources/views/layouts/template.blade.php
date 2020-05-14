@@ -17,7 +17,7 @@
 <!-- BEGIN: Header-->
 <header class="page-topbar" id="header">
     <div class="navbar navbar-fixed">
-        <nav class="navbar-main navbar-color nav-collapsible sideNav-lock navbar-dark gradient-45deg-indigo-purple no-shadow">
+        <nav class="navbar-main navbar-color nav-collapsible sideNav-lock navbar-dark gradient-45deg-purple-deep-orange no-shadow">
             <div class="nav-wrapper">
                 @include('layouts.components.nav-wrapper')
             </div>
@@ -41,7 +41,7 @@
 <!-- BEGIN: Page Main-->
 <div id="main">
     <div class="row">
-        <div class="content-wrapper-before gradient-45deg-indigo-purple"></div>
+        <div class="content-wrapper-before gradient-45deg-purple-deep-orange"></div>
         <div class="breadcrumbs-dark pb-0 pt-4" id="breadcrumbs-wrapper">
             <div class="container">
                 <div class="row">
@@ -75,7 +75,7 @@
 <!-- END: Page Main-->
 
 <!-- BEGIN: Footer-->
-<footer class="page-footer footer footer-static footer-dark gradient-45deg-indigo-purple gradient-shadow navbar-border navbar-shadow">
+<footer class="page-footer footer footer-static footer-dark gradient-45deg-purple-deep-orange gradient-shadow navbar-border navbar-shadow">
     <div class="footer-copyright">
         <div class="container"><span>&copy; {{\Carbon\Carbon::now()->year}} <a href="{{url('/')}}" target="_blank">PIXINVENT</a> All rights reserved.</span><span class="right hide-on-small-only">Design and Developed by <a href="https://github.com/alexaderramos">Alexander R.</a></span></div>
     </div>
