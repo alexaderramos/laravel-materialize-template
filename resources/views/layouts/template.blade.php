@@ -12,12 +12,12 @@
 
 </head>
 <!-- END: Head-->
-<body class="vertical-layout vertical-menu-collapsible page-header-dark vertical-modern-menu preload-transitions 2-columns   " data-open="click" data-menu="vertical-modern-menu" data-col="2-columns">
+<body class="vertical-layout page-header-light vertical-menu-collapsible vertical-menu-nav-dark preload-transitions 2-columns   " data-open="click" data-menu="vertical-menu-nav-dark" data-col="2-columns">
 
 <!-- BEGIN: Header-->
 <header class="page-topbar" id="header">
     <div class="navbar navbar-fixed">
-        <nav class="navbar-main navbar-color nav-collapsible sideNav-lock navbar-dark gradient-45deg-purple-deep-orange no-shadow">
+        <nav class="navbar-main navbar-color nav-collapsible sideNav-lock navbar-dark gradient-45deg-purple-deep-orange gradient-shadow">
             <div class="nav-wrapper">
                 @include('layouts.components.nav-wrapper')
             </div>
@@ -27,7 +27,7 @@
 <!-- END: Header-->
 
 <!-- BEGIN: SideNav-->
-<aside class="sidenav-main nav-expanded nav-lock nav-collapsible sidenav-light sidenav-active-square">
+<aside class="sidenav-main nav-expanded nav-lock nav-collapsible sidenav-light navbar-full sidenav-active-rounded">
     <div class="brand-sidebar">
         <h1 class="logo-wrapper"><a class="brand-logo darken-1" href="index.html"><img class="hide-on-med-and-down" src="../../../app-assets/images/logo/materialize-logo-color.png" alt="materialize logo"/><img class="show-on-medium-and-down hide-on-med-and-up" src="../../../app-assets/images/logo/materialize-logo.png" alt="materialize logo"/><span class="logo-text hide-on-med-and-down">Materialize</span></a><a class="navbar-toggler" href="#"><i class="material-icons">radio_button_checked</i></a></h1>
     </div>
@@ -41,12 +41,11 @@
 <!-- BEGIN: Page Main-->
 <div id="main">
     <div class="row">
-        <div class="content-wrapper-before gradient-45deg-purple-deep-orange"></div>
-        <div class="breadcrumbs-dark pb-0 pt-4" id="breadcrumbs-wrapper">
+        <div class="breadcrumbs-inline pt-3 pb-1" id="breadcrumbs-wrapper">
             <div class="container">
                 <div class="row">
                     @yield('breadcrumb')
-                    <div class="col s2 m6 l6"><a class="btn dropdown-settings waves-effect waves-light breadcrumbs-btn right" href="#!" data-target="dropdown1"><i class="material-icons hide-on-med-and-up">settings</i><span class="hide-on-small-onl">Settings</span><i class="material-icons right">arrow_drop_down</i></a>
+                    <div class="col s2 m6 l6"><a class="btn btn-floating dropdown-settings waves-effect waves-light breadcrumbs-btn right" href="#!" data-target="dropdown1"><i class="material-icons">expand_more            </i><i class="material-icons right">arrow_drop_down</i></a>
                         <ul class="dropdown-content" id="dropdown1" tabindex="0">
                             <li tabindex="0"><a class="grey-text text-darken-2" href="app-contacts.html">Contacts</a></li>
                             <li tabindex="0"><a class="grey-text text-darken-2" href="page-faq.html">FAQ</a></li>
@@ -56,17 +55,8 @@
             </div>
         </div>
         <div class="col s12">
-            <div class="container" id="app">
+            <div class="container animated fadeIn" id="app">
                 @yield('content')
-
-                <div style="bottom: 50px; right: 19px;" class="fixed-action-btn direction-top"><a class="btn-floating btn-large gradient-45deg-light-blue-cyan gradient-shadow"><i class="material-icons">add</i></a>
-                    <ul>
-                        <li><a href="css-helpers.html" class="btn-floating blue"><i class="material-icons">help_outline</i></a></li>
-                        <li><a href="cards-extended.html" class="btn-floating green"><i class="material-icons">widgets</i></a></li>
-                        <li><a href="app-calendar.html" class="btn-floating amber"><i class="material-icons">today</i></a></li>
-                        <li><a href="app-email.html" class="btn-floating red"><i class="material-icons">mail_outline</i></a></li>
-                    </ul>
-                </div>
             </div>
             <div class="content-overlay"></div>
         </div>

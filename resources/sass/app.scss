@@ -8,79 +8,14 @@
 //perfect-scrollbar
 @import "~perfect-scrollbar/css/perfect-scrollbar.css";
 
+//animate-css migrate v3 to v4
+@import "~animate.css/animate.compat.css";
+
 //materialize-css
-@import "../app-assets/css/themes/vertical-modern-menu-template/materialize.min.css";
+@import "../app-assets/css/themes/vertical-menu-nav-dark-template/materialize.min.css";
 
+//template styles
+@import "../app-assets/css/themes/vertical-menu-nav-dark-template/style.min.css";
 
-@import "../app-assets/css/themes/vertical-modern-menu-template/style.min.css";
-
-
-//custom
-/*.navbar-full .brand-sidebar {
-    background: linear-gradient(45deg, #0288d1, #26c6da)!important;
-}
-
-.sidenav li a.active {
-    margin: 0;
-    color: #fff;
-    background: linear-gradient(45deg, #0288d1, #26c6da)!important;
-    box-shadow: 0 6px 20px 0 rgba(38, 198, 218, .5)!important;
-}*/
-
-.btn, .btn-large, .btn-small {
-    cursor: pointer;
-    -webkit-transition: background-color .2s ease-out;
-    transition: background-color .2s ease-out;
-    text-align: center;
-    text-decoration: none;
-    letter-spacing: .5px;
-    color: #fff;
-    background-color: #ff4081;
-}
-.btn-floating, .btn-floating:hover {
-    background-color: #ff4081;
-}
-
-//navbar
-
-.section-auth-navbar nav .nav-wrapper {
-    font-size: 2.1rem
-}
-
-.section-auth-navbar nav .nav-wrapper .brand-logo.center,
-.section-auth-navbar nav .nav-wrapper .brand-logo.center-align {
-    position: absolute;
-    left: 45%
-}
-
-.section-auth-navbar #extended-navbar ul.sidenav#mobile-demo,
-.section-auth-navbar #extended-navbar ul.sidenav#mobile-demo2,
-.section-auth-navbar #mobile-collapse ul.sidenav#mobile-demo,
-.section-auth-navbar #mobile-collapse ul.sidenav#mobile-demo2 {
-    top: 56px;
-    width: 350px
-}
-
-@media screen and (max-width:540px) {
-    .section-auth-navbar nav .nav-wrapper .brand-logo.center,
-    .section-auth-navbar nav .nav-wrapper .brand-logo.center-align {
-        position: absolute;
-        left: 40%
-    }
-}
-
-//error auth
-div.alert-error-auth{
-    margin-left: 3rem;
-}
-
-small.error-auth {
-    font-size: .8rem;
-    position: relative;
-    top: 0;
-    left: 0;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-    color: #ff4081;
-}
+//custom css
+@import "../css/custom.css";

@@ -24,6 +24,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "animate.css": "^4.1.0",
         "materialize-css": "^1.0.0-rc.2",
         "perfect-scrollbar": "1.4.0"
     }
