@@ -4,9 +4,11 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <title>Blank Page | Materialize - Material Design Admin Template</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
+    <script src="{{asset('js/app.js')}}" defer></script>
 
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 
@@ -70,8 +72,6 @@
         <div class="container"><span>&copy; {{\Carbon\Carbon::now()->year}} <a href="{{url('/')}}" target="_blank">PIXINVENT</a> All rights reserved.</span><span class="right hide-on-small-only">Design and Developed by <a href="https://github.com/alexaderramos">Alexander R.</a></span></div>
     </div>
 </footer>
-
-<script src="{{asset('js/app.js')}}"></script>
 
 </body>
 
