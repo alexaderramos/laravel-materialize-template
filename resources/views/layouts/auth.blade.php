@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+
+    <title>User Register | Materialize - Material Design Admin Template</title>
+
+    <script src="{{asset('js/app.js')}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
+
+</head>
+<!-- END: Head-->
+<body class="vertical-layout page-header-light vertical-menu-collapsible vertical-menu-nav-dark preload-transitions 1-column {{Route::is('register')?'register-bg':''}}   blank-page blank-page" data-open="click" data-menu="vertical-menu-nav-dark" data-col="1-column">
+<div class="row">
+    <div class="col s12">
+        <div class="container">
+           @yield('content')
+        </div>
+        <div class="content-overlay"></div>
+    </div>
+</div>
+
+
+</body>
+</html>
+{{--
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -39,3 +69,4 @@
 
 </body>
 </html>
+--}}
